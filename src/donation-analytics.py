@@ -90,7 +90,7 @@ def main():
             #str(individual_contributor.get_total_donation())
             CMTE_ID     = donor.get_CMTE_ID()
             zipcode     = donor.get_ZIP_CODE()
-            year        = donor.get_TRANSACTION_DT()[0][-4:-1]
+            year        = donor.get_TRANSACTION_DT()[0][-4:]
             percentile  = str(donor.get_percentile())
             donation    = str(donor.get_total_donation())
             total_transactions = (len(donor.get_TRANSACTION_AMT()))
